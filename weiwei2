@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>薇薇学院2</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<article>
+	<header>
+		<h1>项脊轩志</h1> 
+		<h3>苏教版</h3>
+	</header>
+	<div class="authorMessage">
+		<address><a href="http://baike.baidu.com/link?url=yaJQp2keeLkXYHePl_ZXg_dC2-Q45s10uN759Nc-BWJzia2W9Obdej9OPa9uuxdKUifbFinBrP7MEYaGTJKnacWQusx9uBTYgpk4SZKNHIQ2gHTs_MGzKi_0RngoDZcM"> 归有光</a></address>
+		<time>明朝</time>
+	</div>
+	<section>
+		<p>项脊轩，旧南阁子也。室仅方丈，可容一人居。百年老屋，尘泥渗（shèn）漉（lù），雨泽下注；每移案，顾视无可置者。又北向，不能得日，日过午已昏。余稍为修葺（qì），使不上漏。前辟四窗，垣墙周庭，以当南日，日影反照，室始洞然。又杂植兰桂竹木于庭，旧时栏楯（shǔn），亦遂增胜。借书满架，偃仰啸歌，冥然兀坐，万籁有声；而庭堦（阶）寂寂，小鸟时来啄食，人至不去。三五之夜，明月半墙，桂影斑驳，风移影动，珊珊可爱。</p>
+	</section>
+	<section>
+	    <img style="width: 200px;height: 200px;" class="oldStyle" src="image/old.jpeg">
+		<p>然余居于此，多可喜，亦多可悲。先是庭中通南北为一。迨（dài）诸父异爨（cuàn），内外多置小门，墙往往而是。东犬西吠，客逾(yú)庖（páo）而宴，鸡栖于厅。庭中始为篱，已为墙，凡再变矣。家有<a href="http://www.baike.com/wiki/%E8%80%81%E5%A6%AA">老妪（yù）</a>， 尝居于此。妪，先大母婢也，乳二世，先妣（bǐ）抚之甚厚。室西连于中闺，先妣尝一至。妪每谓余（予）曰：“某所，而母立于兹。”妪又曰：“汝姊（zǐ）在吾怀，呱呱（gū）而泣；娘以指叩门扉曰：‘儿寒乎？欲食乎？’吾从板外相为应答。”
+		语未毕， 余泣，妪亦泣。余自束发，读书轩中，一日，大母过余曰：“吾儿，久不见若影，何竟日默默在此，大类女郎也？”比去，以手阖门，自语曰：“吾家读书久不效，儿之成，则可待乎！”顷之，持一象笏（hù）至，曰：“此吾祖太常公宣德间执此以朝，他日汝当用之！”瞻顾遗迹，如在昨日，令人长号不自禁。</p>
+		<p>
+			轩东，故尝为厨，人往，从轩前过。余扃（jiōng）牖（yǒu）而居，久之，能以足音辨人。轩凡四遭火，得不焚，殆有神护者。
+		</p>
+		<p>
+			项脊生曰：“蜀清守丹穴，利甲天下，其后秦皇帝筑女怀清台；刘玄德与曹操争天下，诸葛孔明起陇中。方二人之昧昧于一隅也，世何足以知之，余区区处败屋中，方扬眉、瞬目，谓有奇景。人知之者，其谓与坎井之蛙何异？”（上教版高一第二学期第16课无此段文字）
+		</p>
+		<p>
+		　　(下文作者写了这篇志多年以后补写的)余既为此志，后五年，吾妻来归，时至轩中，从余问古事，或凭几学书。 吾妻归宁，述诸小妹语曰：“闻姊家有阁子，且何谓阁子也？”其后六年，吾妻死，室坏不修。其后二年，余久卧病无聊，乃使人复葺南阁子，其制稍异于前。然自后余多在外，不常居。
+		　　庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣。
+		　　
+		</p>
+	</section>
+	<footer>
+		————归有光 《项脊轩志》（与苏教高中必修五相同）
+	</footer>
+</article>
+<article>
+	<header>
+		<h1>送东阳马生序</h1> 
+		<h3>人教版</h3>
+	</header>
+	<div class="authorMessage">
+		<address><a href="http://baike.baidu.com/link?url=1q3Zp2cmSafAa34lr0nQchcAnB9lBBXKJjJnnWIvWPMTBFPw2j3EH0_eeZSTmVRHFt5cg4IuCJBZnsbzpAqzVTlHAc5vZIAM-GLn7_bknxG">宋濂</a></address>
+		<time>明朝</time>
+	</div>
+	<section>
+		<p>余幼时即嗜学。家贫，无从致书以观，每假借于藏书之家，手自笔录，计日以还。天大寒，砚冰坚，手指不可屈伸，弗之怠。录毕，走送之，不敢稍逾约。以是人多以书假余，余因得遍观群书。既加冠，益慕圣贤之道 ，又患无硕师、名人与游，尝趋百里外，从乡之先达执经叩问。先达德隆望尊，门人弟子填其室，未尝稍降辞色。余立侍左右，援疑质理，俯身倾耳以请；或遇其叱咄，色愈恭，礼愈至，不敢出一言以复；俟其欣悦，则又请焉。故余虽愚，卒获有所闻。</p>
+	</section>
+	<section>
+	    <img style="width: 200px;height: 200px;" class="oldStyle" src="image/old.jpeg">
+		<p>当余之从师也，负箧曳屣，行深山巨谷中，穷冬烈风，大雪深数尺，足肤皲裂而不知。至舍，四支僵劲不能动，媵人持汤沃灌，以衾拥覆，久而乃和。寓逆旅，主人日再食，无鲜肥滋味之享。同舍生皆被绮绣，戴朱缨宝饰之帽，腰白玉之环，左佩刀，右备容臭，烨然若神人；余则缊袍敝衣处其间，略无慕艳意。以中有足乐者，不知口体之奉不若人也。盖余之勤且艰若此。</p>
+		<p>
+			今虽耄老，未有所成，犹幸预君子之列，而承天子之宠光，缀公卿之后，日侍坐备顾问，四海亦谬称其氏名，况才之过于余者乎？
+		</p>
+		<p>
+			今诸生学于太学，县官日有廪稍之供，父母岁有裘葛之遗，无冻馁之患矣；坐大厦之下而诵《诗》《书》，无奔走之劳矣；有司业、博士为之师，未有问而不告，求而不得者也；凡所宜有之书，皆集于此，不必若余之手录，假诸人而后见也。其业有不精，德有不成者，非天质之卑，则心不若余之专耳，岂他人之过哉！
+		</p>
+		<p>
+		　　东阳马生君则，在太学已二年，流辈甚称其贤。余朝京师，生以乡人子谒余，撰长书以为贽，辞甚畅达，与之论辩，言和而色夷。自谓少时用心于学甚劳，是可谓善学者矣！其将归见其亲也，余故道为学之难以告之。谓余勉乡人以学者，余之志也；诋我夸际遇之盛而骄乡人者，岂知余者哉！
+		</p>
+	</section>
+	<footer>
+		————宋濂 《送东阳马生序》
+	</footer>
+	<h3>首辅部分名单</h3>
+	<ul>
+		<li>严嵩</li>
+		<li>徐阶</li>
+		<li>张居正</li>
+	</ul>
+</article>
+<div class="sameArt">
+	<h1>古风图片</h1>
+	<ul>
+		<li>
+			<div class="liPic">
+				<h3>中国风</h3>
+				<img width="80%" height="76%" src="image/old.jpeg">
+			</div>
+		</li>
+		<li>
+			<div class="liPic">
+				<h3>中国风</h3>
+				<img width="80%" height="76%" src="image/old.jpeg">
+			</div>
+		</li>
+		<li>
+			<div class="liPic">
+				<h3>中国风</h3>
+				<img width="80%" height="76%" src="image/old.jpeg">
+			</div>
+		</li>
+		<li>
+			<div class="liPic">
+				<h3>中国风</h3>
+				<img width="80%" height="76%" src="image/old.jpeg">
+			</div>
+		</li>
+		<li>
+			<div class="liPic">
+				<h3>中国风</h3>
+				<img width="80%" height="76%" src="image/old.jpeg">
+			</div>
+		</li>
+		<li>
+			<div class="liPic">
+				<h3>中国风</h3>
+				<img width="80%" height="76%" src="image/old.jpeg">
+			</div>
+		</li>
+	</ul>
+</div>
+<article>
+	<header>
+		<h1>美女帅哥统计表</h1> 
+		<h3>就是在忽悠你</h3>
+	</header>
+	<div class="authorMessage">
+		<address><a href="http://baike.baidu.com/link?url=1q3Zp2cmSafAa34lr0nQchcAnB9lBBXKJjJnnWIvWPMTBFPw2j3EH0_eeZSTmVRHFt5cg4IuCJBZnsbzpAqzVTlHAc5vZIAM-GLn7_bknxG">苏苏苏</a></address>
+		<time>天朝</time>
+	</div>
+	<h3>包含的学校</h3>
+	<ol>
+		<li>A大</li>
+		<li>B大</li>
+		<li>C大</li>
+	</ol>
+	<table>
+		<caption>帅哥美女一览表</caption>
+		<tr><th>学校名称</th>
+			<th>美女数量</th>
+			<th>帅哥数量</th>
+			<th>总计</th>
+		</tr>
+		<tr>
+			<td>A大</td>
+			<td>123</td>
+			<td>456</td>
+			<td>579</td>
+		</tr>
+		<tr>
+			<td>B大</td>
+			<td>123</td>
+			<td>456</td>
+			<td>579</td>
+		</tr>
+		<tr>
+			<td>C大</td>
+			<td>123</td>
+			<td>456</td>
+			<td>579</td>
+		</tr>
+	</table>
+	<footer>
+		————superBatMan
+	</footer>
+</article>
+<div class="sameArt">
+	<aside>
+		预留的侧边栏
+	</aside>
+	<form>
+		<table>
+			<tr>
+				<td class="leftTd">请输入邮箱地址：</td>
+				<td class="rightTd"><input type="email" name="_email"></td>
+			</tr>
+			<tr>
+				<td class="leftTd"></td>
+				<td class="rightTd tdText">邮箱地址请按要求格式输入</td>
+			</tr>
+			<tr>
+				<td class="leftTd">请输入密码：</td>
+				<td class="rightTd"><input type="password" name="_password"></td>
+			</tr>
+			<tr>
+				<td class="leftTd">请重新输入密码：</td>
+				<td class="rightTd"><input type="password" name="_password"></td>
+			</tr>
+			<tr>
+				<td class="leftTd"></td>
+				<td class="rightTd">密码请为6-16位英文字母或数字</td>
+			</tr>
+			<tr>
+				<td class="leftTd">性别：</td>
+				<td class="rightTd">男：<input id="maleRadio" checked="checked" type="radio" name="sex" value="male">&nbsp;&nbsp;女：<input id="femaleRadio" type="radio" name="sex" value="female"></td>
+			</tr>
+			<tr>
+				<td class="leftTd">城市：</td>
+				<td class="rightTd">
+					<select>
+						<option selected="selected" value="beijing">北京</option>
+						<option value="shanghai">上海</option>
+						<option value="guangzhou">广州</option>
+						<option value="shenzhen">深圳</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="leftTd">爱好</td>
+				<td class="rightTd">
+					运动:<input type="checkbox" style="width: auto;" checked="checked" name="hobby1">&nbsp;&nbsp;
+					艺术:<input type="checkbox" style="width: auto;" name="hobby2">&nbsp;&nbsp;
+					科学:<input type="checkbox" style="width: auto;" name="hobby3">
+				</td>
+			</tr>
+			<tr>
+				<td class="leftTd" style="vertical-align: top;">个人描述：</td>
+				<td class="rightTd"><textarea name="introduce" placeholder="输入您的个人描述"></textarea></td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>
