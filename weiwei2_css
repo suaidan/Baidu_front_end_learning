@@ -1,0 +1,77 @@
+body{
+	font-family: Microsoft YaHei;
+}
+h3{
+	color:gray;
+}
+.authorMessage >*{
+display: inline-block;
+}
+time{
+	margin-left: 20px;
+}
+section p{
+	text-indent: 2em;
+}
+article img {
+	float:right;
+}
+article , .sameArt{
+	margin:0px auto 60px;
+	padding: 20px 40px;
+	width:80%;
+	background:#e8e8e8;
+	box-shadow: 4px 4px 4px rgb(200,200,200);
+}
+ul{
+	list-style: none;
+}
+ol{
+	list-style-type: decimal;/*我知道默认的是数字*/ 
+}
+.liPic{
+	width:300px;
+	height: 300px;
+	background: rgb(240,240,240);
+	box-shadow: 2px 2px 1px gray;
+	text-align: center;
+}
+article table{
+	width: 80%;
+	margin:0 auto;
+	text-align: center;
+}
+article th{
+	background-color: rgb(100,100,100);
+	color: white;
+	border:none;
+	padding: 5px;
+}
+td{
+	padding: 5px;
+}
+.sameArt aside{
+	float: left;
+	margin-left: 20px;
+}
+.sameArt form{
+	margin-left: 200px;
+	width: 60%;
+}
+.leftTd{
+	text-align: right;
+	padding-right: 20px
+}
+.tdText{
+	color: gray;
+}
+.sameArt form input{
+	width:300px;
+}
+#maleRadio,#femaleRadio{
+	width: auto;
+}
+textarea{
+	width:500px;
+	min-height: 100px;
+}
