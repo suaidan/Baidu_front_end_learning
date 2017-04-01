@@ -1,0 +1,94 @@
+body{
+	font-family: Microsoft YaHei;
+	margin:0;
+}
+h3{
+	color:gray;
+}
+.authorMessage >*{
+display: inline-block;
+}
+time{
+	margin-left: 20px;
+}
+section p{
+	text-indent: 2em;
+}
+article img {
+	float:right;
+}
+article , .sameArt{
+	margin:0px auto 60px;
+	padding: 20px 40px;
+	width:90%;
+	background:#e8e8e8;
+	box-shadow: 4px 4px 4px rgb(200,200,200);
+}
+ul{
+	list-style: none;
+}
+ol{
+	list-style-type: decimal;/*我知道默认的是数字*/ 
+}
+.liPic{
+	width:200px;
+	height: 200px;
+	background: rgb(240,240,240);
+	box-shadow: 2px 2px 1px gray;
+	text-align: center;
+	margin:10px;
+}
+article table{
+	width: 80%;
+	margin:0 auto;
+	text-align: center;
+}
+article th{
+	background-color: rgb(100,100,100);
+	color: white;
+	border:none;
+	padding: 5px;
+}
+td{
+	padding: 5px 0px;
+}
+.sameArt form{
+	width: 80%;
+}
+.leftTd{
+	text-align: right;
+	width: 40%;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+.rightTd{
+	width: 60%;
+}
+.tdText{
+	color: gray;
+}
+#maleRadio,#femaleRadio{
+	width: auto;
+}
+textarea{
+	min-height: 100px;
+}
+.aside{
+	width: 390px;
+	float: right;
+	top: 0;
+	right: 0;
+	margin:0 0 0 30px;
+	padding: 20px 20px;
+	background:#e8e8e8;
+	box-shadow: 4px 4px 4px rgb(200,200,200);
+}
+.container{
+	overflow: hidden;
+}
+.submitButton{
+	width: 100%;
+	background:#3355d0;
+	border: 10px solid #3355d0;
+	border-radius: 4px;
+}
