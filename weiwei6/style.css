@@ -1,0 +1,339 @@
+.container{
+	width: 892px;
+	margin: 10px auto;
+}
+.headerRed{
+	width: 110px;
+	height: 61px;
+	background-color: rgb(212, 93, 92);
+}
+.header{
+	width: 100%;
+	border-bottom:2px solid rgb(147, 142, 140);
+	text-align: center;
+}
+.ife {
+	font-size: 12px;
+	font-family: "SimHei";
+	color: rgb(255, 255, 255);
+	vertical-align: -40px;
+}
+.headerRight{
+	font-size: 12px;
+  	font-family: "SimHei";
+  	color: rgb(212, 93, 92);
+  	vertical-align: -40px;
+}
+.topDiv{
+	margin-top: 34px;
+	width:100%;
+	position: relative;
+}
+.topLeft{
+	width: 641px;
+}
+.topRight{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 202px;
+	height: 303px;
+	border-top:1px solid rgb(204, 128, 145);
+}
+.aboutTec{
+  font-size: 24px;
+  font-family: "Microsoft YaHei";
+  color: rgb(4, 0, 0);
+  text-decoration: underline;
+  font-variant: small-caps;
+  line-height: 1.25;
+}
+.aboutLong {
+  font-size: 12px;
+  font-family: "KaiTi";
+  color: rgb(103, 103, 103);
+  line-height: 0.833;
+  font-style: italic;
+}
+._700 {
+  font-size: 117px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+  color: rgb(117, 184, 107);
+  line-height: 1.5;
+   font-style: italic;
+   margin-left: -17px;
+}
+._3_2 {
+  font-size: 55px;
+  font-family: "Microsoft YaHei";
+  color: rgb(204, 128, 145);
+  line-height: 0.4;
+}
+.cssContain{
+	display: inline-block;
+	width: 116px;
+}
+.csss {
+  font-size: 21px;
+  font-family: "Microsoft YaHei";
+  color: rgb(204, 128, 145);
+  line-height: 1;
+}
+.bottomCss {
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: rgba(35, 24, 21, 0.4);
+  line-height: 1.167;
+}
+.topLeftText{
+	margin-top: 50px;
+}
+.frontEnd {
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgb(118, 119, 119);
+  margin-top: 15px;
+  line-height: 1.333;
+  letter-spacing: 1px;
+}
+.when{
+  margin-left: 254px;
+  margin-right: 157px;
+  width: 204px;
+}
+.what{
+	float: left;
+	width: 228px;
+}
+.how{
+	float: right;
+	width: 150px;
+	word-wrap: break-word;
+}
+.whwText{
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  text-decoration: underline;
+}
+.whatText { 
+  color: rgb(65, 140, 89); 
+}
+.howText{
+  color: rgb(204, 118, 128);
+}
+.whenText{
+  color: rgb(210, 153, 79);
+}
+.howPercent {
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: rgba(35, 24, 21, 0.702);
+  line-height: 2;
+  text-align: left;
+}
+.percent{
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: rgb(204, 118, 128);
+  line-height: 2;
+  text-align: left;
+}
+.bottomDiv{
+	width: 100%;
+	margin-top: 60px;
+}
+.bottomLeft{
+	float: left;
+	width: 415px;
+	margin-top: 7px;
+}
+.bottomRight{
+	margin-left: 435px;
+	width: 457px;
+	position: relative;
+}
+.title{
+  font-size: 72px;
+  font-family: "SimHei";
+  color: rgb(245, 227, 39);
+  line-height: 0.547;
+  font-style: italic;
+  font-weight: bold;
+}
+.titleText{
+  font-size: 33px;
+  font-family: "SimHei";
+  color: rgb(17, 69, 107);
+  font-weight: bold;
+}
+#titleEn{
+  font-size: 40px;
+}
+.BLBottom{
+	border-top: rgb(16, 69, 107) 2px solid;
+	margin-top: 20px;
+	padding-top: 25px;
+}
+.paragra:first-letter{
+  font-size: 70px;
+  font-family: "Microsoft YaHei";
+  color: rgb(245, 227, 39);
+  float: left;
+  margin-right: 10px;
+}
+.BLBottom p{
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgba(118, 119, 119, 0.702);
+  line-height: 1.333;
+  letter-spacing: 1px;
+}
+.BLBottom p img{
+  float: right;
+  margin:20px 0 20px 20px;
+}
+.cover{
+  position: absolute;
+  width: 458px;
+  height: 60px;
+  background-color: rgba(4, 0, 0,0.4);
+  top: 197px;
+}
+.greenLine{
+	width: 38px;
+	height: 44px;
+	margin:8px 0;
+	position: absolute; 
+	border-right: rgb(114, 177, 106) solid 3px;
+}
+.frontTec {
+  font-size: 26px;
+  font-family: "Microsoft YaHei";
+  color: rgb(255, 255, 255);
+  line-height: 44px;
+}
+.lineText{
+	height: 44px;
+	margin:8px 0 8px 41px;
+	padding-left: 15px;
+}
+.frontTecTec{
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  font-style: italic;
+  color: rgb(114, 177, 106);
+  transform: scale(1.4, 1);
+  margin-left: 10px;
+}
+.greenRed{
+  background-color: rgb(238, 237, 214);
+  margin-top: 30px;
+  width: 458px;
+  height: 318px;
+  position: relative;
+  padding-top: 50px;
+}
+.leftBottomRight {
+  background-color: rgb(212, 93, 92);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 260px;
+  height: 160px;
+}
+.greenRed ul{
+	list-style: inside url(images/triangle1.png);
+}
+.greenRed ul li{
+	margin-left: 31px;
+	margin-bottom: 31px;
+	margin-right: 38px;
+}
+.liFrontEnd {
+  font-size: 16px;
+  font-family: "SimSun";
+  color: rgb(90, 91, 91);
+  line-height: 1.25;
+}
+.liFrontEndEnd{
+  font-size: 12px;
+  font-family: "SimSun";
+  font-style: italic;
+  color: rgb(90, 91, 91);
+  line-height: 1.667;
+}
+.doubleMark{
+	width: 140px;
+	margin:210px 38px auto auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	word-wrap: break-word;
+}
+.specialMark1{
+  font-size: 72px;
+  font-family: "SimHei";
+  color: rgb(212, 93, 92);
+  line-height: 0.083;
+  float: left;
+}
+.specialMark2{
+  font-size: 72px;
+  font-family: "SimHei";
+  color: rgb(212, 93, 92);
+  line-height: 0.083;
+  float: right;
+}
+.specialMarkText{
+  font-size: 14px;
+  font-family: "SimHei";
+  color: rgb(90, 91, 91);
+  line-height: 1.143;
+  font-style: italic;
+}
+.zero{
+	width: 78px;
+	height: 86px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	margin-top: -43px;
+	border-right: 2px solid rgb(255, 255, 255);
+}
+.zero span{
+	font-size: 110px;
+	line-height: 86px;
+	color: white;
+}
+.oneTwo{
+  margin-left: 90px;
+  height: 86px;
+  margin-top: 37px;
+}
+.oneTwoText{
+  font-size: 21px;
+  font-family: "SimHei";
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  line-height: 1.143;
+}
+.helloWorld{
+  font-size: 12px;
+  font-family: "SimHei";
+  color: rgb(255, 255, 255);
+  line-height: 0.5;
+}
+.footer{
+	width: 100%;
+	border-top: 2px solid rgb(147, 142, 140);
+	margin-top: 34px;
+	text-align:right;
+}
+.ifeBottom{
+	font-size: 12px;
+	font-family: "SimHei";
+	color: rgb(212, 93, 92);
+}
