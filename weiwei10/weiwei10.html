@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>weiwei10</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.father{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			text-align: center;
+		}
+		.son{
+			padding: 20px;
+			border: 1px #f00 solid;
+			width: 150px;
+		}
+		.firstSon{
+			height: 120px;
+		}
+		.seccondSon{
+			height: 120px;
+		}
+		.thirdSon{
+			height: 100px;
+		}
+		.fourthSon{
+			height: 200px;
+		}
+		@media all and (max-width: 640px){
+			.father{
+				align-items: flex-start;
+				flex-wrap:wrap;
+			}
+			.son{
+				flex-shrink: 0;
+			}
+			.fourthSon{
+				order: 0;
+			}
+			.secondSon{
+				order: 2;
+			}
+			.thirdSon{
+				order: 3;
+				margin-top: 10px;
+			}
+			.firstSon{
+				order: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son firstSon">1</div>
+		<div class="son secondSon">2</div>
+		<div class="son thirdSon">3</div>
+		<div class="son fourthSon">4</div>
+	</div>
+</body>
+</html>
