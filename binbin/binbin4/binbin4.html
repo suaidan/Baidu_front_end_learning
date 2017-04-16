@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>binbin4</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.showBox{
+			overflow: auto;
+			width:500px;
+		}
+		.boxIn{
+			margin: 10px;
+			float: left;
+			padding: 10px;
+			background-color: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<input type="text" id="import" name="item">
+<button id="leftIn">左侧入</button>
+<button id="rightIn">右侧入</button>
+<button id="leftOut">左侧出</button>
+<button id="rightOut">右侧出</button>
+<div class="showBox" id="showBox"></div>
+<script type="text/javascript">
+	var arr=[];//存入要显示的内容
+// 事件绑定函数
+	function addEvent( obj, eve, handle, asyn){
+		try{
+			if(asyn==null){
+			obj.addEventListener( eve, handle, false)
+			}else{
+			obj.addEventListener( eve, handle, asyn)	
+			}
+		}catch(e){
+			try{
+				obj.attachEvent("on"+eve,handle)
+			}catch(e){
+				obj["on"+eve]=handle;
+			}
+		}
+	}
+// 输入函数
+	function putIn(str){
+		var re=/^\d+$/g;
+		var value=document.getElementById("import").value;
+		if(!re.test(value)){
+			alert("请输入数字"+typeof(value));
+		}else{
+	 	if(str.indexOf("leftIn")!=-1){
+	 	arr.unshift(value);
+	    }else{
+	    	arr.push(value)
+	    }
+	    }
+	}
+//删除函数
+	function pushOut(str){
+		if(str.indexOf("leftOut")!=-1){
+			arr.shift()
+		}else{
+			arr.pop();
+		}
+	}
+//对不同按钮进行函数绑定
+addEvent(document.getElementById("leftIn"),"click",function(){putIn("leftIn");show();});
+addEvent(document.getElementById("rightIn"),"click",function(){putIn("rightIn");show();});
+addEvent(document.getElementById("leftOut"),"click",function(){pushOut("leftOut");show();})
+addEvent(document.getElementById("rightOut"),"click",function(){pushOut("rightOut");show();})
+// 在showBox显示
+	function show(){
+		var box=document.getElementById("showBox");
+		box.innerHTML="";
+		arr.forEach(function( item, index, Arr){
+			var boxItem=document.createElement("div");
+			boxItem.className="boxIn";
+			boxItem.innerHTML=item;
+			box.appendChild(boxItem);
+		})
+	}
+</script>
+</body>
+</html>
