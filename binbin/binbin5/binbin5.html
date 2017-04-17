@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>binbin5</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.showBox{
+			overflow: auto;
+		}
+		.boxIn{
+			margin: 5px;
+			text-align: center;
+			display: inline-block;
+			vertical-align: bottom;
+			background-color: red;
+			width: 20px;
+		}
+	</style>
+</head>
+<body>
+<input type="text" id="import" name="item">
+<button id="leftIn">左侧入</button>
+<button id="rightIn">右侧入</button>
+<button id="leftOut">左侧出</button>
+<button id="rightOut">右侧出</button>
+<button id="order">排序</button>
+<div class="showBox" id="showBox"></div>
+<script type="text/javascript">
+	var arr=[];//存入要显示的内容
+// 事件绑定函数
+	function addEvent( obj, eve, handle, asyn){
+		try{
+			if(asyn==null){
+			obj.addEventListener( eve, handle, false)
+			}else{
+			obj.addEventListener( eve, handle, asyn)	
+			}
+		}catch(e){
+			try{
+				obj.attachEvent("on"+eve,handle)
+			}catch(e){
+				obj["on"+eve]=handle;
+			}
+		}
+	}
+// 输入函数
+	function putIn(str){
+		var value=document.getElementById("import").value;
+		if(isNaN(value)){
+			alert("请输入数字");
+		}else{
+			if(value<10||value>100){
+				alert("请输入范围内的数字")
+			}else{
+				if(arr.length>60){
+				alert("超出容量");
+	    		return false;
+				}else{
+					if(str.indexOf("leftIn")!=-1){
+	 				arr.unshift(value);
+	    			}else{
+	    			arr.push(value)
+	    			}
+				}
+	 			
+	    	}
+	    }
+	}
+//删除函数
+	function pushOut(str){
+		if(str.indexOf("leftOut")!=-1){
+			arr.shift()
+		}else{
+			arr.pop();
+		}
+	}
+//对不同按钮进行函数绑定
+addEvent(document.getElementById("leftIn"),"click",function(){putIn("leftIn");show();});
+addEvent(document.getElementById("rightIn"),"click",function(){putIn("rightIn");show();});
+addEvent(document.getElementById("leftOut"),"click",function(){pushOut("leftOut");show();})
+addEvent(document.getElementById("rightOut"),"click",function(){pushOut("rightOut");show();})
+addEvent(document.getElementById("order"),"click",compairFirst)
+// 在showBox显示
+	function show(){
+		if(clear_1!=null)clearTimeout(clear_1);
+		if(clear_2!=null)clearTimeout(clear_2);
+		j=i=0;
+		var box=document.getElementById("showBox");
+		box.innerHTML="";
+		arr.forEach(function( item, index, Arr){
+			var boxItem=document.createElement("div");
+			boxItem.className="boxIn";
+			boxItem.style.height=item*2+"px";
+			box.appendChild(boxItem);
+		})
+	}
+//选择排序的思想
+function orderNum(arr){
+	for(var i=0;i<arr.length;i++){
+		var minNum=arr[i];
+		var numIndex=i;
+		for(var j=i;j<arr.length;j++){
+			if(arr[j]<minNum){
+				minNum=arr[j];
+				numIndex=j;
+			}
+		}
+		arr[numIndex]=arr[i];
+		arr[i]=minNum;
+	}
+}
+//可视化排序。正在比较的是黄色，,当前最小值为蓝色，参与比较的是绿色，排序确定后的是黑色
+var i=0,j=0;
+var minNum=numIndex=0;
+var childs,len;
+var clear_1,clear_2;//在排序演示的过程中如果新增元素就停止演示
+function compairFirst(){
+	len=arr.length;
+	childs=document.getElementById("showBox").childNodes;
+	console.log(arr);
+	console.log(childs);
+	minNum=arr[i];
+	numIndex=i;
+	childs[i].style.backgroundColor="yellow";
+	clear_1=setTimeout(compairSecond,1000);
+}
+function compairSecond(){
+	if((j-1!=numIndex)&&(j>0)&&(j!=i)){
+		childs[j-1].style.backgroundColor="red";
+	}
+	childs[j].style.backgroundColor="green";
+	if(arr[j]<minNum){
+		var pre=numIndex;
+		minNum=arr[j];
+		numIndex=j;
+		childs[pre].style.backgroundColor="red";
+		childs[j].style.backgroundColor="blue";
+	}
+	if(j<len-1){
+		j++;
+		clear_2=setTimeout(compairSecond,1000);
+	}else{
+		arr[numIndex]=arr[i];
+		arr[i]=minNum;
+		setTimeout(function(){
+			childs[j].style.backgroundColor="red";
+			var box=document.getElementById("showBox");
+			var temp=box.replaceChild(childs[i],childs[numIndex]);
+			box.insertBefore(temp,childs[i]);
+			childs[i].style.backgroundColor="black";
+			if(i<len-1){
+			i++;
+			j=i;
+			setTimeout(compairFirst,1000);
+			}
+		},500)
+		
+		
+	}
+	
+}
+</script>
+</body>
+</html>
+  
