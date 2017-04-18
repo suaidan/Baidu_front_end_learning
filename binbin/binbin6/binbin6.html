@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>binbin6</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.showBox{
+			overflow: auto;
+			width:500px;
+		}
+		.boxIn{
+			margin: 10px;
+			float: left;
+			padding: 10px;
+			background-color: red;
+			color: white;
+			box-sizing: border-box;
+		}
+		.result{
+			margin: 10px;
+			float: left;
+			padding: 10px;
+			background-color: green;
+			color: white;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+<textarea id="import" name="item"></textarea>
+<button id="leftIn">左侧入</button>
+<button id="rightIn">右侧入</button>
+<button id="leftOut">左侧出</button>
+<button id="rightOut">右侧出</button>
+<br>
+<input type="text" id="search" name="search"><button id="searchBtn">查询</button>
+<div class="showBox" id="showBox"></div>
+<script type="text/javascript">
+	var arr=[];//存入要显示的内容
+// 事件绑定函数
+	function addEvent( obj, eve, handle, asyn){
+		try{
+			if(asyn==null){
+			obj.addEventListener( eve, handle, false)
+			}else{
+			obj.addEventListener( eve, handle, asyn)	
+			}
+		}catch(e){
+			try{
+				obj.attachEvent("on"+eve,handle)
+			}catch(e){
+				obj["on"+eve]=handle;
+			}
+		}
+	}
+// 输入函数
+	function putIn(str){
+		
+		var value=document.getElementById("import").value;
+		var tempArr=value.split(/\W/);
+		//去除数组中的空元素
+		for(var i=0;i<tempArr.length;i++){
+		if(tempArr[i]==""){
+			tempArr.splice(i,1);
+			i=i-1;
+			}
+		}
+		if(false){
+			alert("请输入数字");
+		}else{
+	 	if(str.indexOf("leftIn")!=-1){
+	 		arr=tempArr.concat(arr);
+	    }else{
+	    	arr=arr.concat(tempArr);
+	    }
+	    }
+	}
+//删除函数
+	function pushOut(str){
+		if(str.indexOf("leftOut")!=-1){
+			arr.shift()
+		}else{
+			arr.pop();
+		}
+	}
+//对不同按钮进行函数绑定
+function bindEvent(){
+	addEvent(document.getElementById("leftIn"),"click",function(){putIn("leftIn");show();});
+	addEvent(document.getElementById("rightIn"),"click",function(){putIn("rightIn");show();});
+	addEvent(document.getElementById("leftOut"),"click",function(){pushOut("leftOut");show();})
+	addEvent(document.getElementById("rightOut"),"click",function(){pushOut("rightOut");show();})
+	addEvent(document.getElementById("searchBtn"),"click",search)
+}
+
+// 在showBox显示
+	function show(){
+		var box=document.getElementById("showBox");
+		box.innerHTML="";
+		arr.forEach(function( item, index, Arr){
+			var boxItem=document.createElement("div");
+			boxItem.className="boxIn";
+			boxItem.innerHTML=item;
+			box.appendChild(boxItem);
+		})
+	}
+//查询函数
+function search(){
+	var value=document.getElementById("search").value;
+	if(value){
+		var content=document.body.innerHTML;
+		var preRe=new RegExp("<div class=.?result.? id=.?_1.?>([^<>]*)</div>","g");
+		content=content.replace(preRe,function($,$1){
+			return "<div class='boxIn'>"+$1+"</div>";
+		})
+		document.body.innerHTML=content;
+		var re=new RegExp("<div class=.?boxIn.?>"+value+"</div>","g");
+		content=content.replace(re,"<div class='result' id='_1'>"+value+"</div>"
+		)
+		document.body.innerHTML=content;
+		bindEvent();
+	}else{
+		alert("请输入内容");
+	}
+}
+bindEvent();
+</script>
+</body>
+</html>
