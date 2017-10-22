@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>表单联动</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<select name="city" id="city" onchange="linkage()">
+    <option value="bj">北京</option>
+    <option value="sh">上海</option>
+    <option value="lb">灵宝</option>
+</select>
+<select name="school" id="school">
+    <option value="">北京大学</option>
+    <option value="">清华大学</option>
+    <option value="">中央党校</option>
+</select>
+<script type="text/javascript">
+    var selc1=document.getElementById('city');
+    var school=document.getElementById('school');
+    function linkage(){
+        var value = selc1.options[selc1.selectedIndex].value;
+        function changeText(arr){
+            for(var i=0;i<arr.length;i++){
+                school.options[i].text=arr[i]
+            }
+        }
+        console.log(value);
+        switch(value){
+            case 'bj':
+            changeText(['北京大学','清华大学','中央党校']);
+            break;
+            case 'sh':
+            changeText(['上海交大','东华大学','上海大学']);
+            break;
+            case 'lb':
+            changeText(['家里蹲大学','焦村职专','灵宝一高']);
+            break;
+            default:return 'nothing';
+        }
+
+    }
+</script>
+</body>
+</html>
